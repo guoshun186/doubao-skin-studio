@@ -1,0 +1,28 @@
+{
+  "name": "doubao-skin-studio",
+  "version": "1.0.0",
+  "description": "Reversible theming for DoubaoWork desktop via local Chromium CDP injection — built-in themes, custom image backgrounds, one-click restore.",
+  "type": "module",
+  "main": "src/apply-skin.mjs",
+  "scripts": {
+    "apply": "node src/apply-skin.mjs",
+    "check": "node --check src/apply-skin.mjs && node --check src/doubao-skin-template.mjs && node --check src/doubao-skin-menu.mjs && node --check src/cdp-client.mjs"
+  },
+  "keywords": [
+    "doubao",
+    "doubaowork",
+    "skin",
+    "theme",
+    "cdp",
+    "chromium",
+    "customization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "win32"
+  ]
+}
