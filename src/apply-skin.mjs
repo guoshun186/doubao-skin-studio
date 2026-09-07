@@ -4,15 +4,16 @@ import { buildSkinMenuScript } from "./doubao-skin-menu.mjs";
 
 const PORT = 9223;
 
-// 内置主题：星夜 Starlight（深色）
-const starlightColors = { accent: "#6d8bff", surface: "#0e1420", text: "#ebf0fa" };
-const starlight = {
-  id: "starlight",
-  name: "星夜 Starlight",
-  accent: "#6d8bff",
-  surface: "#0e1420",
-  css: buildSkinCss({ colors: starlightColors, id: "starlight" }),
-  heroBg: buildHeroBg(starlightColors),
+// 内置主题：橘子洲头（深色，取自橘子洲头风景照取色）
+// 注意：本主题仅在豆包工作「深色模式」下使用，浅色模式下文字可能看不清
+const juzizhouColors = { accent: "#222935", surface: "#0f1017", text: "#d5d7de" };
+const juzizhou = {
+  id: "juzizhou",
+  name: "橘子洲头",
+  accent: "#222935",
+  surface: "#0f1017",
+  css: buildSkinCss({ colors: juzizhouColors, id: "juzizhou" }),
+  heroBg: buildHeroBg(juzizhouColors),
 };
 
 // 清理注入骨架（早期测试皮肤）
@@ -26,8 +27,8 @@ const CLEANUP = `(() => {
 
 // 仪表盘脚本（按钮 + 面板 + 图片上传 + 主题切换）
 const menuScript = buildSkinMenuScript({
-  entries: [starlight],
-  activeId: "starlight",
+  entries: [juzizhou],
+  activeId: "juzizhou",
   styleId: "doubao-skin-style",
   menuId: "doubao-skin-dashboard",
   cssTemplate: CSS_TEMPLATE,

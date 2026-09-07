@@ -1,5 +1,5 @@
 @echo off
-title DoubaoWork - Start with Starlight Skin
+title DoubaoWork - Start with Juzizhou Skin
 echo ============================================
 echo   DoubaoWork - one-click start with skin
 echo ============================================
@@ -12,6 +12,9 @@ echo [3/4] Waiting for DoubaoWork UI to load...
 cd /d "%~dp0"
 node src\apply-skin.mjs
 echo.
-echo [4/4] Done! DoubaoWork is running with the Starlight theme.
+echo [4/4] Done! DoubaoWork is running with the Juzizhou theme.
+echo.
+echo NOTE: This skin is designed for DARK MODE only.
+echo In light mode, text may be hard to read.
 echo.
 pause

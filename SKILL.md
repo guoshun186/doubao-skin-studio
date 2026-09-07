@@ -19,8 +19,6 @@ files are touched.
 
 - The user wants to change DoubaoWork's look (color theme, background image,
   custom uploaded image) without editing the official app.
-- The user references an open-source theming project (e.g. workbuddy-skin-studio)
-  and asks to adapt it for DoubaoWork.
 - The user reports the theme disappeared after a DoubaoWork restart and wants it
   reapplied, or wants to revert to the native look.
 
@@ -65,12 +63,17 @@ This removes all injection and relaunches DoubaoWork normally.
 
 ## Choosing a theme
 
-- **Built-in**: `starlight` (星夜 Starlight — deep space blue-purple dark theme).
+- **Built-in**: `juzizhou` (橘子洲头 — dark theme with colors extracted from a
+  Juzizhou landscape photo).
 - **Custom image**: click 🎨 → "＋ 自定义图片", select a local PNG/JPG/WebP.
   The tool compresses it to 1600px width (WebP 0.8), extracts dominant colors,
   and generates a full theme. Persisted to `localStorage` (`doubaoCustomSkin`).
 - If the user names a mood/color, map to the closest built-in or just apply
-  starlight and let them pick from the 🎨 menu.
+  juzizhou and let them pick from the 🎨 menu.
+
+> **Dark mode only**: This skin is designed for DoubaoWork's **dark mode**. In
+> light mode, text contrast is insufficient and may be unreadable. Tell the user
+> to switch to dark mode in DoubaoWork settings before applying.
 
 ## Guardrails
 
